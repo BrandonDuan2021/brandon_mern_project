@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    background-color: rgb(237, 241, 239);
+}
+
+h1{
+    color: rgb(6, 44, 13);
+}
+
+button{
+    background-color: rgb(20,83,45);
+    color: white;
+    font-weight: 500;
+}
+
+button:hover{
+    opacity: 0.9;
+}
+
+button:disabled{
+    opacity: 0.7;
+}
