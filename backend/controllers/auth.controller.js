@@ -23,7 +23,6 @@ export const signUp = async (req, res, next)=>{
 export const signIn = async (req, res, next)=>{
     try{
         const { email, password } = req.body;
-        console.log(req.body)
         const validUser = await User.findOne({ email }) 
         if (! validUser) return next(errorHandler(404, "User is not found."))
         const validPassword = bcrytjs.compareSync(password, validUser.password)
